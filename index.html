@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blackjack</title>
+  <script defer src="main.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="message-box" id="messages"></div>
+
+  <div class="table">
+
+    <div class="player">
+
+      <div class="dealer-name">Dealer: <span id="dealer-points" class="points"></span>
+      </div>
+
+      <div id="dealer-hand" class="hand">
+        <!-- Dealer Hand -->
+      </div>
+
+    </div>  <!-- Player end -->
+
+    <div class="player">
+
+      <div class="player-name">Player: <span id="player-points" class="points"></span>
+      </div>
+
+      <div id="player-hand" class="hand">
+        <!-- Player Hand -->
+      </div>
+      
+    </div>  <!-- Player end -->
+
+    <div class="buttons">
+      <button id="deal" type="button" onclick="onDeal(); this.disabled = true">Deal</button>
+      <button id="hit" type="button" onclick="onHit()">Hit</button>
+      <button id="stand" type="button" onclick="onStand()">Stand</button>
+    </div>
+    <div class="buttons">
+      <button id="newGame" type="button" onclick="document.location.reload()">New Game</button>
+    </div>
+
+  </div> <!-- table end -->
+
+</body>
+
+</html>
